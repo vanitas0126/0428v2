@@ -191,12 +191,12 @@
       arrowUp.classList.remove('show');
     }
   });
-  arrowUp.addEventListener('click', function() {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
+    const home = document.querySelector('#home');
+
+  arrowUp.addEventListener('click', function () {
+    home.scrollIntoView({ behavior: "smooth" });
   });
+
 
 
     const btnHome = document.querySelector('.home');
